@@ -22,7 +22,7 @@ Arguments for the constructor consist of the following parameters:
 The above constructor initializes a `SimpleDFPlayerMini` object with UART-id `1`, an initial volume of `0` and the `folder repeat` playback mode.
 As a example for the ESP8266 this means `UART1` is used which supports TX-only communication via `GPIO2`. This may differ from board to board so take a look at [this](https://docs.micropython.org/en/latest/esp8266/quickref.html#).
 
-The function calls are self-explanatory for the most cases. If not take a look at the wiki.
+The function calls are self-explanatory for the most cases. If not take a look at the [wiki](https://github.com/thokis/SimpleDFPlayerMini-for-MicroPython/wiki/API).
 
 ## Connection
 
