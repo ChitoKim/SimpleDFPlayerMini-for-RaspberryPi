@@ -28,6 +28,6 @@ The function calls are self-explanatory for the most cases. If not take a look a
 
 Basically you only have to connect the `RX` of the DFPlayerMini to the specific `TX` port of your board. Continuing our example from before `RX` from the DFPlayerMini goes to `GPIO2` on the ESP8266.
 
-Also solder a 1k resistor inbetween the connection or professionaly speaking in serial.
+Also solder a 1k resistor inbetween the connection or professionally speaking in serial.
 
 No other Pins (except VCC and GND) should be used.
