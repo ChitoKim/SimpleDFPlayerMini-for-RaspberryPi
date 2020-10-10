@@ -6,7 +6,7 @@ class SimpleDFPlayerMini:
 
     def __init__(self, uart_id, volume, mode):
         self._uart = UART(uart_id, baudrate=9600)
-        self.resume()
+        self._send_cmd(0x09, 1)
         self.set_eq(1)
         self.set_vol(volume)
         self.set_mode(mode)
@@ -51,7 +51,7 @@ class SimpleDFPlayerMini:
         self._send_cmd(0x0A)
 
     def resume(self):
-        self._send_cmd(0x09, 1)
+        self._send_cmd(0x0B)
 
     def reset(self):
         self._send_cmd(0x0C)
