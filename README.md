@@ -24,7 +24,9 @@ Arguments for the constructor consist of the following parameters:
 
 The above constructor initializes a `SimpleDFPlayerMini` object on GPIO pin `5`.
 You also need to install pigpio:
+````
 sudo apt install pigpio
+````
 
 The function calls are self-explanatory for the most cases. If not take a look at the [wiki](https://github.com/thokis/SimpleDFPlayerMini-for-MicroPython/wiki/API).
 
@@ -32,7 +34,7 @@ The function calls are self-explanatory for the most cases. If not take a look a
 
 Basically you only have to connect the `RX` of the DFPlayerMini to the specific `TX` port of your board. Continuing our example from before `RX` from the DFPlayerMini goes to `GPIO5` on the Raspberry Pi.
 Also solder a 1k resistor inbetween the connection or professionally speaking in serial.
-
+````
             |----DFPLAYER-MINI----|
 PI 3.3v ----|VCC--------------BUSY|
 PI GPIO5 ---|RX---------------USB-|
@@ -43,6 +45,6 @@ PI GPIO5 ---|RX---------------USB-|
    Speaker  |GND---------------GND|--- PI GND
       |-----|SPK_2------------IO_1|
             |--------|_SD_|-------|
-
+````
 
 No other Pins (except VCC and GND) should be used.
