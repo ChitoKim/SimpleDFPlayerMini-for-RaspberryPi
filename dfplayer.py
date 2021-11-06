@@ -1,15 +1,12 @@
 from machine import UART
 from utime import sleep_ms
 
-
 class SimpleDFPlayerMini:
 
-    def __init__(self, uart_id, volume, mode):
-        self._uart = UART(uart_id, baudrate=9600)
+    def __init__(self, tx_pin, baudrate=9600):
+        self._uart = UART(tx_pin, baudrate=baudrate)
         self._send_cmd(0x09, 1)
         self.set_eq(1)
-        self.set_vol(volume)
-        self.set_mode(mode)
         self.pause()
 
     def _send_cmd(self, cmd, data_low=0, data_high=0):
