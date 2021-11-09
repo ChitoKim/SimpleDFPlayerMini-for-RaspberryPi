@@ -16,7 +16,7 @@ from time import sleep
 
 print("DFPlayer Mini Example")
 
-player = SimpleDFPlayerMini(pin=5)
+player = SimpleDFPlayerMini(tx_pin=5)
 
 command = None
 
