@@ -14,6 +14,7 @@ player.set_vol(20)
 track_number = 1
 player.sel_track(track_number)
 
+print("Ready to play track 1")
 # Play the selected track
 player.play()
 
