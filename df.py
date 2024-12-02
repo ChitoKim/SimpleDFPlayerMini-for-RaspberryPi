@@ -5,12 +5,16 @@ from utime import sleep
 TX_PIN = 26  
 
 # Initialize the DFPlayer Mini
+print("setting dfplayer object")
 player = SimpleDFPlayerMini(tx_pin=TX_PIN)
 
 # Set the volume (range: 0-30)
+print("setting volume")
 player.set_vol(20)
 
 # Select a track to play (assuming tracks are numbered starting from 1)
+
+print("setting track number")
 track_number = 1
 player.sel_track(track_number)
 
