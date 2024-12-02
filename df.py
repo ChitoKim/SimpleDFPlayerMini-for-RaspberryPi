@@ -2,7 +2,7 @@ from dfplayer import SimpleDFPlayerMini
 from time import slee
 
 # Assuming TX pin for UART is connected to GPIO15 (adjust based on your setup)
-TX_PIN = 15  
+TX_PIN = 26  
 
 # Initialize the DFPlayer Mini
 player = SimpleDFPlayerMini(tx_pin=TX_PIN)
