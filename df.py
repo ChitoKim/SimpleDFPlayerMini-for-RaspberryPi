@@ -1,12 +1,11 @@
 from dfplayer import SimpleDFPlayerMini
 from utime import sleep
 
-# Assuming TX pin for UART is connected to GPIO15 (adjust based on your setup)
-TX_PIN = 26  
+# Assuming TX pin for UART is connected to GPIO15 (adjust based on your setup) 
 
 # Initialize the DFPlayer Mini
 print("setting dfplayer object")
-player = SimpleDFPlayerMini(tx_pin=TX_PIN)
+player = SimpleDFPlayerMini(tx_pin=26)
 
 # Set the volume (range: 0-30)
 print("setting volume")
