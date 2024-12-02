@@ -1,5 +1,5 @@
 from dfplayer import SimpleDFPlayerMini
-from time import sleep
+from utime import sleep
 
 # Assuming TX pin for UART is connected to GPIO15 (adjust based on your setup)
 TX_PIN = 26  
@@ -17,6 +17,10 @@ player.sel_track(track_number)
 # Play the selected track
 player.play()
 
+print("Playing track 1.")
 # Keep the program running while the track plays
-while True:
-    pass
+try:
+    while True:
+        sleep(1)
+except KeyboardInterrupt:
+    print("Stopping playback.")
