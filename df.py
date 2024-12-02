@@ -1,5 +1,5 @@
 from dfplayer import SimpleDFPlayerMini
-from time import slee
+from time import sleep
 
 # Assuming TX pin for UART is connected to GPIO15 (adjust based on your setup)
 TX_PIN = 26  
